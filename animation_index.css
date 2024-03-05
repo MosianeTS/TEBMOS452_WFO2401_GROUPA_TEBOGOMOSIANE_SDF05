@@ -1,0 +1,64 @@
+
+/*Animation Challenge*/
+.box {
+    width: 10px;
+    height: 10px;
+    background: blue;
+    border: 1px solid black;
+    animation: supersize 2s ease-out 0s 4 alternate; /*Animation duration is 2seconds with a timing function of ease-out and 4 iterations*/
+    animation-fill-mode: both; /*Animation follows the rules for both forwards and backwards*/
+}
+
+@keyframes supersize {  /*Creates an animation in two stages*/
+    0% {width:10px; height:10px; background: blue;}
+    50% {width:20px; height:20px; background: red;}
+    100% {width:50px; height:50px; background: green;}
+}
+
+/*Real World Animations Challenge*/
+
+body {
+	margin: 0;
+}
+
+.image-wrapper {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background: url("Coast.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+    animation-name: expand-fade-in;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+}
+
+.title {
+	font-size: 4em;
+	text-transform: uppercase;  /*Text becomes uppercase*/
+	margin: 0;
+	font-family: Sen;
+	text-transform: uppercase;
+	text-align: center;
+    animation-name: fade-in;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;  /*Animation follows the rules for both forwards and backwards*/
+    animation-delay: 2s;
+}
+
+@keyframes expand-fade-in {
+    from {opacity: 0%; width: 0%;}
+    to {opacity: 100%; width: 100%;}
+}
+
+@keyframes fade-in {
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+}
+
+/*I did not really encounter any difficulties creating these animations. I had fun.*/

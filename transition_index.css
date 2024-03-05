@@ -1,0 +1,85 @@
+
+/*Transition Challenge*/
+.heading {
+    color:darkblue;
+    font-size: 30px;
+    font-family: Roboto, sans-serif;
+    text-align: center;
+    transition: all 1s ease-in 1s; /*All properties to change in 1s with a timing function of ease-in and a delay of 1s */
+}
+
+.heading:hover {
+    color:green;
+    font-size: 45px;
+}
+
+/*Real-World Transition Challenge*/
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.menu {
+	margin: 0;
+	width: 100%;
+	padding: 5px;
+	background: #bdceff;
+	min-height: 10vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-content: center;
+	border-bottom: 3px solid #005aad;
+	flex-wrap: wrap;  /*Allows the flex container to wrap its children onto multiple lines if necessary.*/
+}
+
+.menu-link {
+	text-decoration: none;  /*Removes underlines from links*/
+	font-size: 2em;
+	text-transform: uppercase;
+	font-weight: 800;
+	font-family: Roboto, sans-serif;
+	color: black;
+    transition: all 1s ease-out;  /*All properties to change in 1s with a timing function of ease-out */
+}
+
+.menu-item {
+	height: 3em;
+	align-self: center;
+	margin: 5px;
+}
+
+.title-wrapper {
+	margin: 0;
+	background: #bdceff;
+	border-bottom: 3px solid #005aad;
+	padding: 10px;
+}
+
+.title {
+	margin: 0;
+	width: 100%;
+	font-weight: 800;
+	font-family: Roboto, sans-serif;
+	color: black;
+	text-transform: uppercase;
+	font-size: 4em;
+	text-align: center;
+    transition: all 1s ease-out;   /*All properties to change in 1s with a timing function of ease-out */
+}
+
+.image {
+	width: 100%;
+}
+
+.title:hover {    /*Applies stipulated color when you hover over the title*/
+   color: #1f93ff;
+}
+
+.menu-link:hover {    /*Applies stipulated properties when you hover over the menu-link*/
+    color: #1f93ff;
+    font-size: 2.5em;
+}
+
+/*I did not really encounter any difficulties creating these transitions.*/

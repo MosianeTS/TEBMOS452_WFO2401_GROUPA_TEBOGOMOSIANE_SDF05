@@ -1,0 +1,58 @@
+
+/*Transform Challenge*/
+.box {
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%); /*Translated by -50% of its own width in the X-axis and -50% of its own height in the Y-axis.*/
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: red;
+    border: 1px solid black;
+    animation-name: transform;
+    animation-duration: 2s;
+    animation-iteration-count: infinite; /*Animation goes on indefinitely*/
+}
+
+@keyframes transform {
+    100% {transform: scale(0.5,0.5) rotate(45deg) translate(50px,0px);} /*Scales on both x and y and then translates only on x*/
+}
+
+/*Real World Transform Challenge*/
+
+body {
+	margin: 0;
+	background: #242423;
+}
+
+.square {
+	height: 30px;
+	width: 30px;
+    animation: move 2s ease-in-out 1s infinite alternate both;
+}
+
+.box-red {
+	background: #ff4d4d;
+    margin: 0;
+}
+
+.box-blue {
+	background: #738cff;
+    margin: 0;
+}
+
+.box-green {
+	background: #46ff36;
+    margin: 0;
+}
+
+.box-orange {
+	background: #ffaf24;
+    margin: 0;
+}
+
+@keyframes move {
+    to {transform: translate(50vw, 50vh) scaleX(10) skew(60deg);} /*Translated by 50% of viewport width and height and size increased along x*/
+}
+
+/*I did not really encounter any difficulties creating these transformations. I had fun.*/
